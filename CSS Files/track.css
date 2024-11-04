@@ -1,0 +1,50 @@
+body{
+    padding: 60px 0 0 0;
+}
+.View-all{
+    margin: 20px 30px;
+}
+.View-all>a{
+    text-decoration: underline;
+    color: blue;
+}
+.View-all>a:hover{
+    color: purple;
+}
+.View-all>a:active{
+    color: rgb(0, 6, 128);
+}
+.order-detail{
+    margin: 20px 30px;
+}
+.order-detail>:nth-child(1){
+    font-size: 25px;
+    font-weight: 600;
+}
+.order-detail>img{
+    margin: 20px;
+}
+.progress-container{
+    margin: 10px 30px;
+}
+.progress{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+.progress>div{
+    font-size: 18px;
+    font-weight: 600;
+}
+.progress-bar-box{
+    height: 25px;
+    width: 90vw;
+    border-radius: 18px;
+    border: 1px solid rgb(214, 206, 206);
+}
+.progress-bar{
+    border-radius: 18px;
+    height: 100%;
+    width: 50%;
+    background-color: green;
+}

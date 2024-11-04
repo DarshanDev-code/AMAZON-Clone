@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon clone</title>
+    <link rel="stylesheet" href="../CSS Files/amazon.css">
+    <link rel="stylesheet" href="../CSS Files/slider.css">
+    <link rel="stylesheet" href="../CSS Files/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body style="font-family: Roboto,Arial, Helvetica, sans-serif;">
+
+    <header class="header">
+        <div class="Top-left">
+            <a href="./amazon.html">
+                <img class="Amazon-logo" src="../Images/amazon-logo-white.png" alt="Amazon-logo">
+                <img src="../Images/amazon-mobile-logo-white.png" alt="" class="Amazon-mobile-logo">
+            </a>
+        </div>
+        <div class="Search-box">
+            <input type="text" placeholder="Search Amazon" class="Search">
+            <i class="fa fa-search Search-icon"></i>
+        </div>
+        <div class="Top-right">
+            <a href="./return.html">
+                <div class="Return-Order"><span>Returns</span><span>& Orders</span></div></a>
+                <a href="./checkout.html">
+                    <div class="Cart"><i class="fa fa-shopping-cart" style="color: #ffffff;"><button class="js-cart-quantity">0</button></i><span>Cart</span></div>
+                </a>
+        </div>
+        <div class="Toggle_btn">
+            <i class="fa fa-bars" style="color: #fafffd;"></i>
+        </div>
+    </header>
+    <div class=" Dropdown">
+        <a href="./return.html">
+            <div class="Return-Order"><span>Returns</span><span>& Orders</span></div></a>
+            <a href="./checkout.html">
+                <div class="Cart"><i class="fa fa-shopping-cart" style="color: #ffffff;"><button class="js-cart-quantity">0</button></i><span>Cart</span></div>
+            </a>
+    </div>
+
+<div style="position: relative;">
+    <div class="Image-slideshow">
+        <button class="btn btn-2" onclick="Prev();">&#8656;</button>
+        <div class="Offer">
+
+            <div class="Offer-text">
+                <h1>Starting at just $3.55</h1>
+            <p>Offer on CLothing,Footwear and Many More.</p>
+        </div>
+        <div class="slider-container">
+            
+            <img class="slide" src="../Images/6-piece-non-stick-baking-set.webp" width="100%" height="100%" alt="">
+            <img class="slide" src="../Images/6-piece-white-dinner-plate-set.jpg" width="100%" height="100%" alt="">
+            <img class="slide" src="../Images/adults-plain-cotton-tshirt-2-pack-teal.jpg" width="100%" height="100%" alt="">
+            <img class="slide" src="../Images/athletic-cotton-socks-6-pairs.jpg" width="100%" height="100%" alt="">
+            <img class="slide" src="../Images/intermediate-composite-basketball.jpg" width="100%" height="100%" alt="">
+            <img class="slide" src="../Images/liquid-laundry-detergent-plain.jpg" width="100%" height="100%" alt="">
+            <img class="slide" src="../Images/luxury-tower-set-6-piece.jpg" width="100%" height="100%" alt="">
+        </div>
+    </div>
+        <button class="btn btn-1" onclick="Next();">&#8658;</button>
+    </div>
+    <script src="../JS Files/image-slider.js"></script>
+
+    <div class="main"></div>
+</div>
+    
+    <script type="module" src="../JS Files/Amazon.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS Files/checkout.css">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <div class="Header">
+        <div class="Amazon-logo">
+            <a href="./amazon.html">
+            <img height="100%" width="100%" class="Amazon-pc-logo" src="https://supersimple.dev/projects/amazon/images/amazon-logo.png" alt="Amazon-logo">
+            <img height="100%" width="35%" class="Amazon-mobile-logo" src="https://supersimple.dev/projects/amazon/images/amazon-mobile-logo.png" alt="Amazon logo">
+        </a>
+    </div>
+    <div class="middle-text">
+        <span>Checkout(<span class="item-count">0 items</span>)</span>
+    </div>
+    <div class="lock-img">
+        <img height="100%" width="100%" src="https://supersimple.dev/projects/amazon/images/icons/checkout-lock-icon.png" alt="">
+    </div>
+</div>
+
+<div class="content">
+<div class="main">
+    <div>
+        <div class="review"><h2>Review your order</h2></div>
+        <div class="checkout">
+            <div class="product-summary">
+                
+            </div>
+            <div class="place-order">
+                <h3>Order Summary</h3>
+                <div class="place-order-list">
+                    <div>
+                    Items(<span class="items"></span>):
+                    </div>
+                    <div class="TotalAmt">$0</div>
+                </div>
+                <div class="place-order-list">
+                    <div>
+                    Shipping & handling:
+                    </div>
+                    <div class="js-shiping">$0</div>
+                </div>
+                <div class="place-order-list bottom-border">
+                    <div>
+                    Total before tax:
+                    </div>
+                    <div class="js-before-tax">$0</div>
+                </div>
+                <div class="place-order-list bb2">
+                    <div>
+                    Estimated tax(10%):
+                    </div>
+                    <div class="js-after-tax">$0</div>
+                </div>
+                <div class="place-order-list total-order">
+                    <div>
+                    Order total:
+                    </div>
+                    <div class="Total">$0</div>
+                </div>
+                <div style="text-align: center;">
+                    <a href="../HTML Files/return.html"><button class="btn">Place your Order</button></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+<script type="module" src="../JS Files/checkout.js"></script>
+</body>
+</html>

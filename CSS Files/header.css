@@ -1,0 +1,180 @@
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(19, 25, 33);
+}
+.Top-left{
+    height: 40px;
+    width: 120px;
+    margin:2px 0 0 20px;
+    padding: 10px;
+    position: relative;
+}
+.Amazon-logo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.Amazon-mobile-logo{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    display: none;
+}
+.Search-box{
+    position: relative;
+    flex: 1;
+    min-width: 150px;
+    max-width: 450px;
+}
+.Search{
+    height: 38px;
+    width: 100%;
+}
+.Search::placeholder{
+    padding: 0 10px;
+}
+.Search-icon{
+    background: rgb(254, 189, 105);
+    padding: 10px 15px;
+    position: absolute;
+    right: 0;
+    border: none;
+    height: 100%;
+    color: rgb(26, 26, 74);
+}
+.Top-right{
+    display: flex;
+    flex-direction: row;
+    margin:0 30px;
+    color: white;
+}
+
+.Return-Order{
+    margin: 0 20px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.Cart{
+    display: flex;
+    align-items: end;
+    width: 100px;
+}
+.Cart>i{
+    font-size: 44px;
+    position: relative;
+}
+.Cart>i>button{
+    font-size: 12px;
+    color: rgb(240, 158, 52);
+    font-weight:900;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    background: rgb(19, 25, 33);
+    border-radius: 14px;
+    padding: 2px 5px;
+}
+.Cart>span{
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.Return-Order{
+    padding: 0 5px;
+    width: 80px;
+}
+.Return-Order :nth-child(1){
+    font-size: 12px;
+}
+.Return-Order :nth-child(2){
+    font-weight: 700;
+    font-size: 15px;
+    word-spacing: .2px;
+}
+
+.Amazon-logo:hover,.Return-Order:hover,.Cart:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 950px) {
+    .Amazon-logo{
+        display: none;
+    }
+    .Amazon-mobile-logo{
+        display: block;
+        top: 6px;
+    }
+    .Top-left{
+        height: 55px;
+        width: 55px;
+        text-align: center;
+    }
+    .Amazon-mobile-logo:hover{
+        border: 1px solid white;
+    border-radius: 5px;
+    }
+}
+
+.Toggle_btn{
+    display: none;
+    cursor: pointer;
+}
+.Toggle_btn:active{
+    scale: .8;
+}
+@media (max-width : 480px){
+    .Toggle_btn{
+        display: block;
+    }
+    .Top-right{
+        display: none;
+    }
+}
+
+.Toggle_btn i{
+    height: 20px;
+    width: 30px;
+    margin:0 10px 0 20px;
+    padding-top: 3px;
+}
+
+.Dropdown{
+    color: white;
+    background-color: rgb(19, 25, 33);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+.Dropdown a div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 5px;
+}
+.Dropdown a div span{
+    display: flex;
+    flex-direction: row;
+}

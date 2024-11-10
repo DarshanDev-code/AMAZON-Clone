@@ -4,15 +4,15 @@ import { cart,products,DeliveryOption } from "./products.js";
 function RenderProductData(){
 let ProductSummaryHTML ='';
 cart.forEach((CartItem)=>{
+    
     let ProductId = CartItem.ProductId;
     let MatchingItem;
     products.forEach((product)=>{
-        if(product.id === ProductId)
+        if(product.id == ProductId)
         {
             MatchingItem = product;
         }
     })
-
     const ProductDeliveryId = CartItem.DeliveryDateId;
 
     let MatchingId;

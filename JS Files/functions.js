@@ -6,6 +6,6 @@ export function FormatCurrency(Amount)
 export function CartQuantity(cart){
     let Cart_Quantity = 0 
     cart.forEach((item)=>{
-    Cart_Quantity += item.Quantity;
+    Cart_Quantity += Number(item.Quantity);
 })
 return Cart_Quantity;}

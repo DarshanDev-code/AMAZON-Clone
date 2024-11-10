@@ -208,13 +208,7 @@ export let products = [
   }
 ];
 
-export let cart = JSON.parse(localStorage.getItem('cart')) || [
-  {
-    ProductId: '',
-    Quantity: '',
-    DeliveryDateId: ''
-  }
-];
+export let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 export let DeliveryOption =  [
   {

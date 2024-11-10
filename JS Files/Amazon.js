@@ -49,7 +49,8 @@ document.querySelectorAll('.js-add-to-cart').forEach((button,index) => {
             
         })
         if(MatchingItem){
-            MatchingItem.Quantity += Number(items_count);
+            MatchingItem.Quantity+= Number(items_count);
+            console.log(cart)
             
         }
         else{
